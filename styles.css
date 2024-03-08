@@ -1,0 +1,108 @@
+html {
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: hsl(275, 100%, 97%);
+  
+    font-family: Work Sans, Arial;
+    font-size: 16px;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+  
+    min-height: 100vh;
+  }
+  
+  main {
+    background-color: hsl(0, 0%, 100%);
+  
+    padding: 25px 30px;
+  
+    width: 40%;
+  
+    border-radius: 20px;
+  }
+  
+  hr {
+    color: hsl(292, 16%, 49%);
+  }
+  
+  .page-title {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+  
+    align-items: center;
+  
+    height: 100px;
+  }
+  .title-text {
+    font-size: 45px;
+    font-weight: 700;
+  
+    color: hsl(292, 42%, 14%);
+  
+    padding-left: 20px;
+  }
+  
+  .collapsible {
+    background-color: hsl(0, 0%, 100%);
+  
+    padding: 10px 20px;
+  
+    border: none;
+  
+    width: 100%;
+  
+    font-family: Work Sans, Arial;
+    font-size: 16px;
+  
+    text-align: left;
+    align-items: center;
+  }
+  .collapsible:hover {
+    cursor: pointer;
+  }
+  .collapsible.active + .content {
+    max-height: 200px; /* Adjust height as needed */
+  }
+  .button-container {
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button-text {
+    font-weight: 700;
+  
+    color: hsl(292, 42%, 14%);
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  
+    width: 100%;
+  
+    padding: 0 20px;
+  
+    color: hsl(292, 16%, 49%);
+  }
+  
+  .attribution {
+    font-size: 11px; text-align: center; 
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%); 
+  }
+  
+  @media screen and (max-width: 480px) {
+    html {
+     background-image: url(assets/images/background-pattern-mobile.svg); 
+    }
+  }
